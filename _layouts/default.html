@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description }}">
+  <title>
+    {% if page.title == "Home" %}
+      Built With React
+    {% else if %}
+      {{ page.title }} &middot; Built With React
+    {% endif %}
+  </title>
+
+  <meta property="og:title" content="Built With React"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://builtwithreact.io/"/>
+  <meta property="og:image" content="{{ site.url }}/img/share-logo.jpg"/>
+  <meta property="og:site_name" content="Built With React"/>
+  <meta property="fb:admins" content="501641940"/>
+
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+</head>
+<body>
+  <div class="main-sidebar">
+    <a href="/">
+      <img src="/img/logo.svg" alt="React Logo" class="main-sidebar-logo img-responsive">
+    </a>
+    <h1><a href="/" class="site-name">Built With React</a></h1>
+    <p class="subtitle">User interfaces built with <a href="http://facebook.github.io/react/">React</a>.</p>
+    <p class="byline">Brought to you by <a href="http://blimp.io">Blimp</a></p>
+
+    <hr class="main-sidebar-hr">
+
+    {% include navigation.html %}
+
+    <hr class="main-sidebar-hr">
+
+    <ul class="list-unstyled">
+      <li class="nav-item">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://builtwithreact.io/" data-text="@BuiltWReact: A list of user interfaces built with @reactjs." data-related="BuiltWReact" data-count="none">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </li>
+    </ul>
+  </div>
+  <div class="main-container">
+    {{ content }}
+  </div>
+  {% include analytics.html %}
+</body>
+</html>

@@ -1,0 +1,261 @@
+---
+---
+{% include css/bootstrap.min.css %}
+
+body {
+  color: #7f7f7f;
+  margin: 0 15px 15px 0;
+  font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 27px;
+}
+
+a {
+  color: #3681C3;
+}
+
+a:hover {
+  color: #3681C3;
+}
+
+hr {
+  border-color: #EEEEEE;
+}
+
+.site-name {
+  color: #3f3f3f;
+}
+
+.site-name:hover {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+.main-sidebar {
+  position: fixed;
+  width: 230px;
+  margin-left: 15px;
+  font-size: 14px;
+}
+
+h2 {
+  color: black;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 32px ;
+  font-weight: 200;
+  line-height: 50px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #7f7f7f;
+}
+
+.byline {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+
+.main-container {
+  margin: 15px 0 0 310px;
+}
+
+.main-sidebar-logo {
+  width: 180px;
+}
+
+.main-sidebar-hr {
+  margin: 10px 0;
+}
+
+.screenshot-link:hover {
+  text-decoration: none;
+}
+
+.posts {
+  max-width: 955px;
+}
+
+.posts li {
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 35px;
+  padding-bottom: 25px;
+}
+
+.post-description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.post-description-title {
+  margin: 0 auto 10px;
+  font-size: 37px;
+}
+
+.post-description-date {
+  color: #a2a2a2;
+  margin: 0 0 10px;
+}
+
+.post-description-link {
+  color: black;
+}
+
+/*************/
+/* Paginator */
+/*************/
+.paginator {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  max-width: 955px;
+  margin-bottom: 40px;
+}
+
+.paginate {
+  width: 25%;
+  padding: 10px 0;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.paginate.older {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.paginate.newer {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 1px solid #e5e5e5;
+}
+
+span.paginate {
+  color: #bfbfbf;
+}
+
+a.paginate:hover {
+  background-color: #3681C3;
+  text-decoration: none;
+  color: white;
+  border-color: #3681C3;
+}
+
+
+/************/
+/* Browser */
+/************/
+.browser-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.browser-container {
+  border: 1px solid #F1F1F1;
+  border-top: 0 none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.browser-container > p {
+  padding: 0;
+  margin: 0;
+}
+
+.browser-container img {
+  width: 100%;
+  max-width: 1000px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* xs */
+@media (min-width: 0px) and (max-width: 767px) {
+  .main-sidebar {
+    position: inherit;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .main-sidebar-hr {
+    margin: 20px 20px 20px 0;
+  }
+
+  .main-container {
+    margin: 15px 0 0 20px;
+  }
+
+/*  .browser-top {
+    height: 24px;
+  }*/
+
+  .hidden-xs {
+    display: none;
+  }
+
+  .visible-xs {
+    display: block;
+  }
+
+}
+
+/* sm */
+@media (min-width: 768px) and (max-width: 991px) {
+/*  .browser-top {
+    height: 41px;
+  }*/
+
+  .visible-xs {
+    display: none;
+  }
+}
+
+/* md */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*  .browser-top {
+    height: 49px;
+  }*/
+
+  .visible-xs {
+    display: none;
+  }
+}
+
+/* lg */
+@media (min-width: 1200px) {
+  .visible-xs {
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div class="posts">
+  <div class="post-description">
+    <h3 class="post-description-title"><a href="{{ page.url }}" class="post-description-link">{{ page.title }}</a></h3>
+    <p class="post-description-date">{{ page.date | date: "%B %-d, %Y" }}</p>
+  </div>
+
+  {% assign item = page %}
+  {% include screenshot.html %}
+</div>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Home
+---
+
+<div id="home">
+  <ul class="posts list-unstyled">
+    {% for post in paginator.posts %}
+      <li>
+        {% assign item = post %}
+        {% include screenshot.html %}
+        </a>
+        <div class="post-description">
+          <h3 class="post-description-title"><a href="{{ post.url }}" class="post-description-link">{{ post.title }}</a></h3>
+          <p class="post-description-date">{{ post.date | date: "%B %-d, %Y" }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+  {% include pagination.html %}
+</div>
