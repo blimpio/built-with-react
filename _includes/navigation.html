@@ -4,6 +4,7 @@
   </li>
 
   {% assign pages_list = site.pages %}
+
   {% for node in pages_list %}
     {% if node.title != null %}
       {% if node.layout == "page" %}
@@ -13,6 +14,7 @@
       {% endif %}
     {% endif %}
   {% endfor %}
+
   <li class="nav-item">
     <a class="nav-link" href="/about/">Submit a site</a>
   </li>
@@ -22,12 +24,9 @@
 
 <ul class="list-unstyled">
   <li class="nav-item">
-    <a class="nav-link" href="http://eepurl.com/bxiti5">Subscribe</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="https://twitter.com/builtwreact">Twitter</a>
-  </li>
-  <li class="nav-item">
     <a class="nav-link" href="/feed.xml">RSS</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="http://eepurl.com/bxiti5">Subscribe</a>
   </li>
 </ul>
