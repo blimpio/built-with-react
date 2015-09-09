@@ -182,17 +182,25 @@ a.paginate:hover {
   justify-content: center;
 }
 
+.desktop-container,
 .browser-container {
   border: 1px solid #F1F1F1;
   border-top: 0 none;
   border-radius: 0 0 6px 6px;
 }
 
+.desktop-container {
+  border-top: 1px solid #F1F1F1;
+  border-radius: 6px;
+}
+
+.desktop-container > p,
 .browser-container > p {
   margin: 0;
   padding: 0;
 }
 
+.desktop-container img,
 .browser-container img {
   width: 100%;
   max-width: 1000px;

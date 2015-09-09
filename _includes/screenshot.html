@@ -3,6 +3,10 @@
     <div class="mobile-container">
       {{ item.content }}
     </div>
+  {% elsif item.is_desktop %}
+    <div class="desktop-container">
+      {{ item.content }}
+    </div>
   {% else %}
     {% include browser-top.html %}
     <div class="browser-container">
