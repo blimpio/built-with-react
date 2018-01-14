@@ -5,4 +5,4 @@ slug: imgsquash
 source: https://imgsquash.com/
 ---
 
-<img src="/screenshots/imgsquash.png" alt="Dropbox Paper">
+<img src="/screenshots/imgsquash.png" alt="Imgsquash">
