@@ -5,4 +5,4 @@ slug: mobile-twitter
 source: https://mobile.twitter.com/
 ---
 
-![Mowned](/screenshots/mobile-twitter.png)
+![Mobile Twitter](/screenshots/mobile-twitter.png)
