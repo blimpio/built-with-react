@@ -6,3 +6,8 @@ services:
       - "4000:4000"
     volumes:
       - .:/built-with-react
+  test:
+    build: .
+    volumes:
+      - .:/built-with-react
+    command: bash script/cibuild
